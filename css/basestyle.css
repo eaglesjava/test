@@ -1,0 +1,2826 @@
+/**
+ * This file contains basic styles shared by the whole project.
+ */
+
+
+
+/* =============================================================== */
+/* ========================= CUSTOM RESET ======================== */
+/**
+ * reset the default browser or bootstrap style.
+ */
+/* =============================================================== */
+
+/**
+ * disable the last two level of RWD
+ * only avaliable larger than 970px
+ */
+.container {
+    width: 1030px !important;
+}
+
+/*@media (min-width: 1200px) {
+    .container {
+        width:1170px !important;
+    }
+}*/
+
+
+
+/**
+ * prevent the .nav-justified to stack when window size is smaller than 768px
+ */
+
+/*.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+}*/
+
+
+
+
+
+/* =============================================================== */
+/* ========================= GENERAL TAGS ======================== */
+/**
+ * general html tags style.
+ */
+/* =============================================================== */
+html {
+    position: relative;
+    /*top: 2px;*/
+    min-height: 99.8%;
+}
+html,body {
+    /*min-width: 1030px;*/
+    color: #666;
+    font-size: 13px;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+
+}
+
+ul li { list-style: none;}
+a { color: #999999; }
+
+a:hover {
+    color: #2fb037;
+    text-decoration: none;
+}
+
+
+
+
+
+/* =============================================================== */
+/* ======================= GENERIC CLASSES ======================= */
+/**
+ * define useful classes can be used in various condition.
+ */
+/* =============================================================== */
+
+.active-gray { background-color: #edf0f2; }
+
+/**
+ *  Star and star filled style
+ */
+
+.link-green {
+    color: #7bb528;
+}
+.link-green:hover {
+    text-decoration: underline;
+}
+
+.link-blue { color: #6db8e2; }
+
+.link-gray { color: #75808f; }
+
+.link-black { color: #111; }
+
+.star { color: #cccccc;}
+
+/*.star-filled { color: #ff9700; }*/
+
+.rate1 .sf1,
+.rate2 .sf2,
+.rate3 .sf3,
+.rate4 .sf4,
+.rate5 .sf5 {
+    color: #ff9700;
+}
+
+.warning-red { color: #ff0000 !important; }
+
+.btn-primary-green,
+.btn-primary-green:focus,
+.btn-primary-green:visited {
+    padding: 9px 58px;
+    border-radius: 0;
+    background-color: #2fb037;
+    border-color: #75ad25;
+}
+
+.btn-primary-green:hover {
+    box-shadow: 0 0 5px #bbb;
+    background-color: #42b649;
+    border: 1px solid #42b649;
+}
+
+.btn-primary-green:active {
+    padding: 10px 57px 8px 59px ;
+    background-color: #2fa937;
+    border-color: #2fa937;
+}
+
+.btn-success,
+.btn-success:focus,
+.btn-success:visited {
+    background-color: #2fb037;
+    border-color: #2fb037;
+    border-radius: 0;
+}
+.btn-success:hover{
+    box-shadow: 0 0 5px #bbb;
+    background-color: #42b649;
+    border: 1px solid #42b649;
+}
+.btn-success:active {
+    background-color: #2fa937;
+    border-color: #2fa937;
+}
+
+.shadow {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =============================================================== */
+/* ======================= HELP CLASSES ========================== */
+/**
+ * define useful classes can be used in various condition to have
+ * minor fix.
+ */
+/* =============================================================== */
+.num {
+    position: absolute;
+    top: 13px;
+    top/*\**/: 13px\9;
+    right: 15px;
+    right/*\**/: 12px\9;
+    min-width: 18px;
+    height: 16px;
+    padding: 2px 3px;
+    color: #BB0C0D;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.as-iblock {
+    display: inline-block;
+}
+
+.root { position: relative; }
+
+.font-12 { font-size: 12px; }
+.font-14 { font-size: 14px; }
+.font-16 { font-size: 16px; }
+.font-18 { font-size: 18px; }
+.font-20 { font-size: 20px; }
+.font-22 { font-size: 22px; }
+
+.fontgreen-50 {
+    color: #2fb037;
+    font-size: 48px;
+}
+
+.p-break {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right {text-align: right; }
+
+.vertical-2 { vertical-align: -2px; }
+.vertical-bottom { vertical-align: bottom; }
+
+.top-1 {
+    position: relative;
+    top: 1px;
+}
+.top-2 {
+    position: relative;
+    top: 2px;
+}
+.top-5 {
+    position: relative;
+    top: 5px;
+}
+.top-7 {
+    position: relative;
+    top: 7px;
+}
+
+.p-close {
+    position: relative;
+    top: -10px;
+    right: -16px;
+}
+
+.left-2 {
+    left: 2px
+}
+
+.counting {
+    font-size: 12px;
+    color: #999999;
+}
+
+.no-resize { resize: none; }
+
+.no-border { border: none; }
+
+.mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+.mt-25 { margin-top: 25px; }
+.mt-34 { margin-top: 34px; }
+.mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 50px; }
+.mt-57 { margin-top: 57px; }
+.mt-120 { margin-top: 120px; }
+.mr-5  {margin-right: 5px; }
+.mr-10 { margin-right: 10px; }
+.mr-15 { margin-right: 15px; }
+.mr-20 { margin-right: 20px; }
+.mr-35 { margin-right: 35px; }
+.mr-50 { margin-right: 50px; }
+.mr-75 { margin-right: 75px; }
+.mb-0  { margin-bottom: 0;}
+.mb-5  { margin-bottom: 5px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-120 {margin-bottom: 120px; }
+.mb-160 { margin-bottom: 160px; }
+.ml-5 {margin-left: 5px; }
+.ml-10 { margin-left: 10px; }
+.ml-15 { margin-left: 15px; }
+.ml-20 { margin-left: 20px; }
+.ml-25 { margin-left: 25px; }
+.ml-30 { margin-left: 30px; }
+.ml-50 { margin-left: 50px; }
+.ml-40 { margin-left: 40px; }
+.ml-70 { margin-left: 70px; }
+.ml-80 { margin-left: 80px; }
+
+
+.pt-8 { padding-top: 8px; }
+.pr-10 { padding-right: 10px; }
+.pr-25 { padding-right: 25px; }
+.pr-50 { padding-right: 50px; }
+.pl-0  { padding-left: 0; }
+.pl-11 { padding-left: 11px; }
+.pl-20 { padding-left: 20px; }
+.pl-30 { padding-left: 30px; }
+.pl-50 { padding-left: 50px; }
+
+
+.line-h15 { line-height: 1.5;}
+
+
+.title-black { color: #000; }
+.white { color:#fff; }
+.a-active { color: #66b5d6; }
+.light { color: #ccc; }
+.green { color: #2fb037; }
+.yellow { color: #ffc21a; }
+
+.font-bold { font-weight: bold; }
+
+.bg-source { background-color: #f4fffd; }
+
+
+.clearfix { clear: both; }
+
+
+.w-150 { width: 150px; }
+.w-220 { width: 220px; }
+.w-300 { width: 300px; }
+.w-380 { width: 380px; }
+.w-450 { width: 450px; }
+
+.m-height { min-height: 600px; }
+.m-height800 { min-height: 800px; }
+
+
+
+
+
+/* =============================================================== */
+/* ========================= Components ========================== */
+/**
+ * For those structure can be reused across different pages.
+ */
+/* =============================================================== */
+/*
+ * ERROR WINDOW STYLE
+ */
+.error-container {
+    min-width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #ddd;
+    font-size: 18px;
+    text-align: center;
+    clear: both;
+}
+.error-container a,
+.error-container-page a {
+    font-size: 14px;
+    color: #6db8e2;
+}
+
+.error-container p,
+.error-container-page p { margin-top: 15px; } 
+
+
+.error-container-page {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    min-width: 250px;
+    margin: 0 auto;
+    color: #ddd;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*
+ * ALERT WINDOW STYLE
+ */
+.tip-container {
+    width: 465px;
+    padding-bottom: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #CCC;
+}
+
+.tip-header {
+    padding-left: 16px;
+    padding-right: 13px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+.tip-header i {
+    position: relative;
+    top: 12px;
+    font-size: 20px;
+    color: #aaa;
+}
+
+.tip-header i:hover { color: #2fb037; }
+
+.tip-content {
+    padding-top: 45px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tip-content img{ margin-right: 12px; }
+
+.tip-footer {
+    height: 30px;
+    padding-right: 13px;
+}
+
+.detail-info {
+    font-size: 12px;
+    color: #999;
+    line-height: 1;
+}
+
+.row p {
+    margin-bottom: 0;
+}
+
+.tip-content .row {
+    width: 485px;
+    text-align: left;
+}
+
+.tip-collection {
+    margin-top: 200px;
+}
+
+.tip-collection .tip-container {
+    margin: 20px;
+}
+
+.detail-info {
+    font-size: 12px;
+    color: #999;
+    line-height: 1;
+}
+
+.row p {
+    margin-bottom: 0;
+}
+
+.tip-content form {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.tip-content form label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/**
+ *course-list style
+ */
+
+.course-list {
+    padding: 0;
+    margin-bottom: 29px;
+
+}
+
+.course-list li {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    line-height: 22px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.course-list-item-length { margin-left: 20px;}
+
+/*
+*plan course-list
+*overwrite the course-list style of leap-course page
+*/
+.plan {
+    padding: 0;
+    margin-top: 27px;
+
+}
+
+.plan li h5 {
+    padding-top: 15px;
+    padding-left: 5px;
+    margin: 0;
+    border-top: 1px solid #ebebeb;
+}
+
+.plan .course-list li {
+    padding-top: 9px;
+    padding-right: 9px;
+    padding-left: 18px;
+    border: none;
+}
+
+
+/*
+*progressbar
+*remove the radius of progressbars' borders and shorten the progress bar
+*/
+
+.course-progress {
+    padding: 20px 30px 10px;
+    color: #fff;
+    background-image: url(../img/course_bg.png);
+}
+
+.course-progress h4 {
+    width: 440px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.course-progress h4:hover {
+    color: #2fb037;
+}
+
+.course-progress-info {
+    color: #869184;
+}
+
+.progress {
+    height: 15px;
+    background-color: #ebebeb;
+    border-radius: 0;
+}
+
+.progress-bar {
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.progress-bar-warning {
+    background-color: #fe9d00;
+}
+
+.percent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #666;
+}
+
+/**
+ * course-tab
+ * contains all the styles of tab
+ */
+
+.course-tab {
+    float: left;
+    width: 100%;
+    padding: 18px 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.course-tab li {
+    padding-bottom: 13px;
+}
+
+.course-tab-container {
+    clear: both;
+    width: 100%;
+    text-align:center;
+    background-color:#fcfcfc;
+    border: 1px solid #e2e2e2;
+}
+
+.tab-active {
+    color: #66b5d6;
+    border-bottom: 2px solid #66b5d6;
+}
+
+.tab-active  a {
+    color: #66b5d6;
+}
+
+.tab-content {
+    margin: 13px 25px 12px 20px;
+    height: 100%;
+}
+
+#choice-order {
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #f5f5f5;
+    border: 0;
+}
+
+.dropdown a {
+    display: inline-block;
+    width:130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.course-tab-list {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.course-tab-list li {
+    float: left;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom:15px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.course-tab-list li p a:hover { color:#2fb037;}
+
+.list-item-info span {
+    float: left;
+    color:#ccc;
+}
+
+.list-item-info span a { color:#ccc; }
+
+.line {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.avatar-bigger {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.course-video .avatar-bigger { margin-right:16px; }
+
+p.tab-list {
+    width:302px;
+    text-align:left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
+
+p.tab-list .mark-link{
+    display:inline-block;
+    max-width:276px;
+    text-align:left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
+
+p.tab-list .fa-question {
+    padding: 1px 4px 1px ;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #fff;
+    vertical-align: top;
+    background-color: #e76e6e;
+    border: 1px solid #e76e6e;
+    border-radius: 2px;
+}
+
+.course-video p.tab-list {
+    width:254px;
+    margin-bottom: 0;
+}
+
+
+/**
+ * some styles for font-awesome
+ */
+
+.fa-circle ,.fa-adjust ,.fa-circle-o {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #2fb037;
+}
+
+.gray-circle {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.fa-play-circle {
+    margin-right: 8px;
+    font-size: 14px;
+    /*color: #999;*/
+}
+
+.course-play .fa-play-circle {
+    font-size: 48px;
+    color: #2fb037;
+}
+
+
+/**
+ *the style for new note or new discuss
+ */
+.new-edit {
+    display: none;
+    padding: 1px;
+    margin-right: -26px;
+    margin-left: -21px;
+    text-align: left;
+    background-clip: padding-box;
+    white-space: normal;
+}
+
+
+.arrow-new {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 346px;
+    border-width: 7px;
+    border-color: transparent;
+    border-style: solid;
+    border-top-width: 0;
+    border-bottom-color: #e2e2e2;
+}
+
+.content-new {
+    height: 165px;
+    padding: 20px 41px 18px 35px;
+    background-color:#e2e2e2;
+}
+
+.content-new .form-control {
+    font-size: 12px;
+    border:1px solid transparent;
+    box-shadow: none;
+}
+
+.content-new textarea{
+    resize: none;
+}
+
+/**
+ * Start line: a vertical line constructed by div
+ */
+.start-line {
+    width: 3px;
+    height: 14px;
+    margin: 0 8px 0 0;
+    background-color: #2fb037;
+}
+
+/**
+ * Login modal
+ */
+
+.modal { display: block; }  /* for debug */
+
+.login-modal .modal-dialog {
+    width: 483px;
+}
+.login-modal .modal-header {
+    padding-left: 32px;
+}
+.login-modal .modal-title {
+    color: #636668;
+}
+.login-modal .modal-body {
+    padding: 32px;
+}
+.login-modal .modal-content {
+    border-color: #b7bec3;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-form .form-group {
+    margin: 0;
+    color: #cecccc;
+}
+
+.login-form .form-control {
+    padding-left: 45px;
+    width: 416px;
+    height: 44px;
+    font-size: 14px;
+    line-height/*\**/: 30px\9;      /* 针对IE8的hack */
+    border-radius: 2px;
+    background-color: #fafafa;
+}
+
+.form-control-hinticon {
+    position: absolute;
+    top: 0;
+    /*left: 2px;*/ /* 隔离left */
+    z-index: 2;
+    display: block;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.form-control-hinticon-info {
+    top: -3px;
+    right: 2px;
+    color: #ff0000;
+}
+
+.btn-primary-login,
+.btn-primary-login:focus,
+.btn-primary-login:visited{
+    padding: 8px 161px;
+    font-size: 18px;
+    text-align: center;
+    word-break: break-all;
+    letter-spacing: 5px;
+    background-color: #2fb037;
+    border-color: #2fb037;
+}
+
+.btn-primary-login:hover{
+    box-shadow: 0 0 5px #bbb;
+    background-color: #42b649;
+    border: 1px solid #42b649;
+}
+
+.btn-primary-login:active {
+    padding: 9px 160px 7px 162px;
+    background-color: #2fa937;
+    border-color: #2fa937;
+}
+
+.login-form-rem {
+    padding-top: 15px;
+}
+.login-form-rem-chk {
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #d4dbe3;
+
+    cursor: pointer;
+}
+.login-form-rem-chked {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    color: #74b21b;
+}
+.login-form-rem-txt-wrap {
+    /*margin-left: 10px;*/
+}
+.login-form-rem-txt {
+
+}
+
+
+
+/**
+ * Leap tabs derived from bootstrap tabs style
+ */
+.nav-tabs-leap {
+    border: none;
+}
+
+.nav-tabs-leap > li > a {
+    margin-right: 5px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 0;
+}
+.nav-tabs-leap > li.active > a,
+.nav-tabs-leap > li.active > a:hover,
+.nav-tabs-leap > li.active > a:focus {
+    color: #000000;
+    background-color: #edf0f2;
+    border: none;
+}
+
+.tab-content-leap {
+    margin: 0;
+    padding-top: 26px;
+}
+
+/**
+ * Leap pager derived from avalon oniUI pager style
+ */
+.pager-leap {
+    padding-top: 8px;
+    text-align: center;
+}
+
+.pager-leap .ui-pager .ui-pager-prev,
+.pager-leap .ui-pager .ui-pager-next,
+.pager-leap .ui-pager .ui-pager-item {
+    margin-right: 14px;
+    padding-top: 3px;
+    padding-left: 13px;
+    padding-right: 13px;
+    height: 30px;
+    color: #8c9192;
+    border-color: #c1c1c1;
+    border-radius: 0;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+}
+
+.pager-leap .ui-pager .ui-pager-item.ui-state-active {
+    padding-top: 4px;
+    color: #ffffff;
+    background-color: #2fb037;
+    border-color: #2fb037;
+}
+
+
+/** this part is writen to realize the goal that
+ * when users put mouse on the avatar the owner of the
+ * avatar appear
+ */
+.avatar-bigger-container {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.avatar-name {
+    display: none;
+    position: relative;
+
+}
+
+.avatar-bigger-container:hover {
+    background: #66b5d6;
+}
+
+.avatar-bigger-container:hover .avatar-bigger{ display: none; }
+
+.avatar-bigger-container:hover .avatar-name {
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    padding-top: 5px;
+    vertical-align: middle;
+    text-align: center;
+    /*line-height: 45px;*/
+    overflow: hidden;
+    color: #fff;
+    word-break: break-all;
+    word-wrap: break-word;
+    animation:name-display 1s;
+    -moz-animation:name-display 1s; /* Firefox */
+    -webkit-animation:name-display 1s; /* Safari and Chrome */
+    -o-animation:name-display 1s; /* Opera */
+}
+
+@keyframes name-display {
+    from { top: -20px; }
+    to { top: 0px; }
+}
+
+@-moz-keyframes name-display /* Firefox */  {
+    from { top: -20px; }
+    to { top: 0px; }
+}
+
+@-webkit-keyframes name-display /* Safari and Chrome */  {
+    from { top: -20px; }
+    to { top: 0px; }
+}
+
+@-o-keyframes name-display /* Opera */  {
+    from { top: -20px; }
+    to { top: 0px; }
+}
+
+
+/**
+ * the play button for the leap-course page where the inside triangle is white
+ */
+.play-continue-container {
+    top: 9px;
+    left: 15px;
+    display: inline-block;
+    height: 23px;
+    width: 25px;
+    margin-bottom: 21px;
+    background-color: #fff;
+}
+
+.play-continue {
+    position: absolute;
+    top: -11px;
+    left: -12px;
+}
+
+/**
+ * the styles for all states of buttons
+ */
+.btn-publish-big {
+    padding:4px 30px;
+    background-color: #2fb037;
+    border-color: #2fb037;
+    border-radius: 0;
+}
+.btn-publish-big:active {
+    padding: 5px 29px 3px 31px;
+}
+
+.btn-publish {
+    padding:1px 17px;
+    background-color: #2fb037;
+    border-color: #2fb037;
+    border-radius: 0;
+}
+.btn-publish:active {
+    padding: 2px 16px 0 18px ;
+}
+
+
+
+.btn-success,
+.btn-success:focus,
+.btn-success:visited {
+    background-color: #2fb037;
+    border-color: #2fb037;
+    border-radius: 0;
+}
+.btn-success:hover{
+    box-shadow: 0 0 5px #bbb;
+    background-color: #42b649;
+    border: 1px solid #42b649;
+}
+.btn-success:active {
+    background-color: #2fa937;
+    border-color: #2fa937;
+}
+
+/* GRAY BUTTON SMALL SIZE*/
+.btn-gray {
+    padding: 4px 35px;
+    color: #fff;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.btn-gray:hover {
+    background-color: #2fb037;
+    border-color: #2fb037;
+}
+
+.btn-setting { padding: 4px 30px ; }
+.btn-setting:active { padding: 5px 29px 3px 31px ; }
+
+.btn-setting-large,
+.btn-setting-large:focus,
+.btn-setting-large:visited {
+    padding: 10px 30px ;
+}
+.btn-setting-large:active {
+    padding: 11px 29px 9px 31px;
+}
+
+.btn-setting-disabled,
+.btn-setting-disabled:focus,
+.btn-setting-disabled:visited,
+.btn-setting-disabled:hover {
+    padding: 4px 30px ;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.btn-publish-disabled,
+.btn-publish-disabled:focus,
+.btn-publish-disabled:visited,
+.btn-publish-disabled:hover {
+    height: 30px;
+    width: 90px;
+    padding: 0;
+    background-color: #ccc;
+    border-color: #ccc;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+}
+
+/* =============================================================== */
+/* ====================== STRUCTURE/CONTENT ====================== */
+/**
+ * For those structure can be reused across different pages.
+ */
+/* =============================================================== */
+
+/**
+ * Green header and Gray footer
+ */
+.header {
+    height: 61px;
+    background-color: #ffffff;          /* white bg */
+    border-bottom: 1px solid #2baf33;   /* green bottom border */
+}
+
+.header-link > span{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.header-link > span:first-child {
+    width: 120px;
+    border-left: none;
+}
+
+.header-link > span:last-child  { border-right: none;}
+
+.header-link > span > a {
+    display: block;
+    height: 60px;
+    text-align: center;
+}
+
+.header-link > span > a:hover,
+.header-link > span > a:focus, {
+    text-decoration: none;
+    background-color: #23902a;
+}
+
+/* NEW */
+.ecenter {
+    font-size: 14px;
+}
+.ecenter:focus {
+    text-decoration: none;
+    color: #2cb034;
+}
+.notification:focus {
+    color: #2cb034;
+}
+
+.header .root {
+    height: 60px;
+    line-height: 60px;
+}
+
+.header .dropdown-menu {
+    left: -60%;
+    margin-top: 0;
+}
+
+.logo {
+    position: absolute;
+}
+
+.footer {
+    /*position: fixed;*/
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #eaeaea;
+    clear: both;
+}
+
+.footer span {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+/**
+ * Below is highly related with leap-course-signup page
+ */
+
+.course-banner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.main .course-banner-signup .container {
+    width: 1030px !important;
+}
+
+.course-title {
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.course-intro {
+    padding-top: 15px;
+    padding-bottom: 12px;
+    height: 54px;
+    overflow: hidden;
+}
+
+.course-rating {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.course-join {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.course-summary {
+    padding-top: 8px;
+}
+
+
+.course-main {
+    margin-bottom: 150px;
+    padding-top: 38px;
+    background-color: #ffffff;
+}
+
+.rating { font-size: 22px; }
+
+.rating-txt {
+    color: #ff9700;
+}
+
+.rating span.star {
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+}
+
+.course-content {
+    padding-right: 5px;
+}
+
+.course-content .course-content-head p {
+    margin-bottom: 5px;
+}
+
+.course-content-body {
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+
+.course-content-body > p {
+    line-height: 1.8;
+}
+
+.course-content-foot {
+    padding-top: 12px;
+}
+
+.teacher {
+    padding: 26px 20px 16px 24px;
+    border: 1px solid #eeeeee;
+    border-left: 3px solid #7cb52d;
+}
+
+.teacher .avatar {
+    padding-right: 20px;
+    padding-bottom: 2px;
+}
+
+.teacher .name {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.course-setting {
+    border: 1px solid #efefef;
+}
+
+.course-setting-head {
+    padding: 15px 12px;
+}
+
+.course-setting-body {
+    padding: 22px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.course-setting-foot {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.course-setting-title {
+    margin: 0;
+    color: #000000;
+    font-weight: bold;
+}
+
+.course-list-item {
+    margin-bottom: 20px;
+}
+.course-list-item > p{
+    margin-bottom: 8px;
+}
+
+.relation {
+    padding-top: 14px;
+}
+
+.relation img {
+    margin-right: 5px;
+}
+
+.relation h5 {
+    margin-bottom: 24px;
+
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/**
+ * Below is highly related with leap-course-video page
+ */
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 380px;
+    /*overflow: hidden;*/
+}
+
+.video-header {
+    position: absolute;
+    top: 0;
+    height: 46px;
+    width: 100%;
+    line-height: 46px;
+    font-size: 14px;
+    background-color: #333;
+}
+
+.video-header span {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #484848;
+}
+
+.video-header .white {
+    margin-left: -4px;
+    border-right: none;
+    border-left: 1px solid #292929;
+}
+
+.video-header .retract {
+    height: 32px;
+    padding-left: 8px;
+    padding-right: 5px;
+    margin-top: 8px;
+    color: #333;
+    line-height: 32px;
+    text-align: center;
+    background-color: #999;
+    border :1px solid #999;
+    border-radius: 5px 0 0 5px;
+}
+
+.video-header .retract:hover { background-color: #fff;}
+
+.video-window {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 46px;
+    background-color: #171f24;
+}
+
+.video-footer {
+    position: absolute;
+    bottom: 0;
+    height: 46px;
+    width: 100%;
+    line-height: 46px;
+    background-color: #333;
+}
+
+.video-footer span {
+    padding-left: 13px;
+    padding-right: 15px;
+}
+
+.video-arrow {
+    position: absolute;
+    right: 39px;
+}
+
+
+/*this part is written ro overwrite the style of course-list in leap-course page*/
+
+.course-video .course-list {
+    margin-left: -20px;
+    margin-right: -25px;
+}
+.course-video .course-list li { border: none; }
+
+.course-video .course-list li a { margin-left: 20px;}
+
+.course-video .course-list li:hover,
+.course-video .course-list li.active { background-color: #e9ecec; }
+
+.course-video .arrow-new { margin-left :316px; }
+
+.course-video .new-edit {
+    margin-right: -7px;
+    margin-left: -2px;
+}
+
+.course-video .course-tab-list li { padding:15px 25px 5px 20px; }
+
+
+
+/*This part is for avalon flipswitch*/
+
+.video-footer .ui-flipswitch-small { width: 57px; }
+
+.video-footer .ui-flipswitch-small .ui-flipswitch-dragger-ball { margin-left: -4px; }
+
+.video-footer .ui-flipswitch-small .ui-flipswitch-dragger-ball-unchecked { margin-left: -14px; }
+
+.video-footer .ui-flipswitch {
+    float: left;
+    top:12px;
+    right: 5px;
+
+}
+
+/*This class is for scroll tag and this make it full screen in y*/
+.course-scroll {
+    margin-bottom: 29px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+
+/**
+ * Below style is highly related with leap-user-center page
+ * Mainly include course-card, eplan-card, discuss list,
+ * note list and user center nav
+ */
+.user-center-main h5,
+.user-center-nav h5 {
+    margin: 0;
+    width: 200px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.user-center-main .start-line,
+.user-center-nav .start-line {
+    margin-right: 12px;
+    height: 18px;
+}
+
+.user-center-main {
+    padding-top: 52px;
+    padding-bottom: 150px;
+}
+
+.my-discuss,     /*set gap for my-note, my-discuss */
+.my-note {
+    padding-bottom: 35px;
+}
+
+.user-course-head,
+.eplan-head,
+.discuss-head,
+.note-head {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.user-course-body,
+.eplan-body,
+.discuss-body,
+.note-body {
+    padding-top: 25px;
+}
+
+/**
+ * User center navigation
+ */
+.user-center-nav {
+    padding-left: 24px;
+    padding-top: 48px;
+}
+.user-center-nav h4 {
+    margin: 0;
+    padding-left: 2px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #000000;
+    font-weight: 500;
+}
+.user-center-nav img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.user-center-nav ul {
+    padding-top: 4px;
+    padding-left: 0;
+    border-top: 1px solid #e5e5e5;
+}
+.user-center-nav ul li {
+    padding: 10px 20px;
+}
+.user-center-nav ul li i {
+    padding-right: 15px;
+    color: #75808f;
+    font-size: 14px;
+}
+
+/**
+ * Card style(course card and eplan card)
+ */
+
+/* abandoned for loop easily
+ *
+.course-card-row,
+.eplan-card-row {
+    padding-bottom: 35px;
+}*/
+
+.course-card,
+.eplan-card {
+    float: left;
+    width: 222px;
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-bottom: 35px;
+    border: 1px solid #eeeeee;
+    /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);*/
+}
+.course-card:hover,
+.eplan-card:hover {
+    border: 1px solid #2fb037;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/*.course-card:first-child,
+.eplan-card:first-child {
+    margin-left: 0;
+}*/
+.course-card-first,
+.eplan-card-first {
+    margin-left: 0;
+}
+.course-card-last,
+.eplan-card-last {         /* make sure add this style when you repeat the list. IE8 doesn't support :last-child */
+    margin-left: 16px;
+    margin-right: 0;
+}
+
+.course-card img,
+.eplan-card img {
+    display: block;
+}
+
+.course-card-progress,
+.eplan-card-progress {
+    height: 5px;
+    background-color: #cccccc;
+}
+
+.course-card-progress-cur,
+.eplan-card-progress-cur {
+    height: 5px;
+    background-color: #2fb037;
+}
+.course-card-intro,
+.eplan-card-intro {
+    padding: 8px 10px 15px 15px;
+    color: #000000;
+}
+
+.course-card-intro span,
+.eplan-card-intro span {
+    display: inline-block;
+    height: 33px;
+    overflow: hidden;
+}
+
+.course-card-teacher {
+    padding: 10px 15px;
+    border-top: 1px solid #e1e1e1;
+    background-color: #fafafa;
+}
+.course-card-teacher img {
+    display: block;
+    margin-right: 11px;
+}
+.course-card-teacher p {
+    margin: 0;
+    color: #646464;
+}
+.course-card-teacher .teacher-name {
+    color: #636363;
+    font-weight: bold;
+}
+.course-card-teacher .teacher-name-detail {
+    display: inline-block;
+    width: 90px;
+    margin-bottom: -4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.course-card-teacher .teacher-title {
+    margin-left: 20px;
+}
+
+/**
+ * Enterprise plan
+ */
+.enterprise-plan {
+    padding-top: 21px;
+}
+
+.eplan-card-intro p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #dbdbdb;
+}
+
+.eplan-card-date {
+    padding: 10px 15px;
+    border-top: 1px solid #e1e1e1;
+    background-color: #fafafa;
+}
+
+.eplan-card-date p {
+    height: 32px;
+    line-height: 32px;
+    color: #646464;
+}
+
+
+/**
+ * Discuss
+ */
+.discuss {
+    padding-top: 5px;
+}
+.discuss-list {
+    height: 510px;
+    border-top: 1px solid #e5e5e5;
+}
+.discuss-item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #cccccc;
+    color: #000000;
+    cursor: pointer;
+}
+.discuss-item:hover {
+    background-color: #edf0f2;
+}
+.discuss-item p {
+    margin: 0;
+    text-align: right;
+}
+.discuss-item p:first-child {
+    text-align: left;
+}
+.discuss-item p span {
+    display: inline-block;
+    color: #999999;
+}
+
+.discuss-item .time {
+    width: 32px;
+    margin-left: 10px;
+}
+
+/**
+ * Note
+ */
+.note {
+    padding-top: 49px;
+}
+.note-list {
+    border-top: 1px solid #e5e5e5;
+}
+.note-item {
+    padding: 10px 15px;
+    border-bottom: 1px dashed #cccccc;
+}
+.note-item h6 {
+    margin: 0;
+    font-size: 15px;
+}
+.note-item p {
+    margin: 0;
+    color: #666666;
+}
+.note-title {}
+.note-info {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.note-info span {
+    margin-left: 14px;
+}
+.note-info span:first-child {
+    margin: 0;
+}
+.note-info-tag {
+    display: inline-block;
+    padding: 1px 5px;
+    background-color: #d5d4d4;
+    /*border-radius: 3px;*/
+    color: #ffffff;
+}
+.note-info-tag:hover{
+    background-color: #2fb037;
+}
+.note-info-tag a {
+    color: #ffffff;
+}
+
+
+/**
+ * Below style is highly related with leap-course-note-relative page
+ * Mainly include discuss-source,source-comment,
+ * source-info
+ */
+.source {
+    padding-bottom: 15px;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.source-title {
+    margin-top: 0;
+    line-height: 1.4;
+}
+
+.source-info {
+    margin-top: 13px;
+    margin-bottom: 17px;
+}
+
+.source-content {
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    text-align: justify;
+}
+
+.row p.source-content {
+    margin-bottom: 17px;
+}
+
+.source-comment h4 {
+    margin-top: 34px;
+}
+
+.comment-edit-mark {
+    height: 40px;
+    margin-top: 23px;
+    line-height: 40px;
+    color: #7bb528;
+}
+
+.comment-list {
+    padding-left: 0;
+    margin-top: 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.comment-list li {
+    padding-top: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.comment-list li .edit-block {
+    margin-bottom: 10px;
+}
+
+.comment-list li div {
+    margin-top: 10px;
+}
+
+.comment-content p {
+    margin: 0;
+    overflow: hidden;
+    line-height: 24px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.quote {
+    padding: 10px 20px 20px 20px;
+    background-color: #fafafa;
+    /*border: 1px solid #e5e5e5;*/
+}
+
+.quote .comment-content p {
+    height: 42px;
+    margin: 0;
+    text-overflow: ellipsis;
+    line-height: 24px;
+}
+
+.comment-list li .quote div { margin-top: 10px; }
+
+.edit-block a {
+    color:#999;
+    text-decoration: none;
+}
+.edit-block a:hover { color:#7bb528; }
+
+.quote-reply .quote {
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    border: none;
+}
+
+.source-comment textarea {
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    resize: none;
+    border-radius: 0;
+}
+
+/*right-bar*/
+
+.discuss-info {
+    padding-bottom: 60px;
+    margin-left: 50px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.discuss-source {
+    height: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+    border-left: 2px solid #2fb037;
+}
+
+
+/*Below style is highly related with leap-enterprise-center page and leap-notification-content page*/
+
+.enterprise-center .course-banner {
+    padding: 0;
+    height: 239px;
+    background-color: #fff;
+    border: none;
+    overflow: hidden;
+}
+
+.enterprise-center .course-banner .container {
+    height: 245px;
+    width: 1000px !important;
+    /*-webkit-filter: blur(1px);*/
+    /*-moz-filter: blur(1px);*/
+    /*-ms-filter: blur(1px);*/
+    /*filter: blur(1px);*/
+    /*filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=1, MakeShadow=false);*/
+    /*overflow: hidden;*/
+}
+
+.banner-shelter {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    width: 1000px;
+    height: 245px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(17, 19, 17, 0.4), rgba(17, 19, 17, 0.4));
+    background-image: -webkit-linear-gradient(rgba(17, 19, 17, 0.4), rgba(17, 19, 17, 0.4));
+    background-image: -o-linear-gradient(rgba(17, 19, 17, 0.4), rgba(17, 19, 17, 0.4));
+    background-image: -moz-linear-gradient(rgba(17, 19, 17, 0.4), rgba(17, 19, 17, 0.4));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#30000000', endColorstr='#30000000', GradientType=0);
+}
+
+.enterprise-info {
+    margin-left: 12px;
+    margin-top: 50px;
+}
+
+.enterprise-info p {
+    line-height: 24px;
+    margin-left: 115px;
+    margin-right: 12px;
+}
+
+/*.enterprise-info .avatar img { border: 5px solid #8f9ca0; }*/
+
+.enterprise-center .first-grade {
+    position: absolute;
+    z-index: 201;
+    top: -36px;
+    left: 27px;
+    border: none;
+}
+
+.enterprise-center .first-grade li a {
+    padding: 9px 23px 5px;
+    color: #000;
+    font-size: 14px;
+    background-color: #edf0f2;
+}
+
+.enterprise-center .nav-tabs li a.enterprise-firstgrade-active,
+.enterprise-center .nav-tabs li a.enterprise-firstgrade-active:hover ,
+.enterprise-center .first-grade li a:hover ,.enterprise-center .second-grade li a:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.enterprise-center .nav-tabs li a.enterprise-firstgrade-active{ color: #2fb037; }
+
+.enterprise-center .tab-content { margin: 0; }
+
+.enterprise-center .first-content { 
+    margin-top: 38px;
+    min-height: 900px;
+}
+
+.enterprise-center .tab-content h4{
+    padding-bottom: 17px;
+    border-bottom: 1px solid #ddd;
+}
+
+.enterprise-center .second-grade { width: 428px;  }
+
+.enterprise-center .second-grade li {
+    margin-right: 10px;
+    border-bottom: 4px solid transparent;
+}
+
+.enterprise-center .second-grade li a {
+    font-size: 14px;
+    color: #000;
+}
+
+.enterprise-center .second-grade li.active ,
+.enterprise-center .second-grade li:hover {
+    height: 46px;
+    border: none;
+    border-bottom: 4px solid #2fb037;
+}
+
+.enterprise-center .second-grade li.active a {
+    color: #2fb037;
+    border: none;
+}
+
+.enterprise-center .nav-tabs-leap > li > a { padding: 3px 20px; }
+
+.enterprise-center .course-card-list {
+    padding-left: 0;
+    width: 1036px;
+}
+
+.enterprise-center .course-card {
+    margin-left: 0;
+    margin-right: 37px;
+    margin-bottom: 67px;
+}
+
+.enterprise-center .discuss-list { border: none; }
+
+/*this is for leap-notification-content page*/
+.notification-content {
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.notification-body {
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.notification-detail {
+    line-height: 27px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.attachment-list { text-align: left; }
+
+.attachment-list li a {
+    padding-bottom: 12px;
+    font-size: 14px;
+}
+
+/**
+ * Trial and paid register form
+ */
+.einfo-reg {
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.einfo-reg label {
+    font-weight: normal;
+    font-size: 14px;
+}
+.einfo-reg-head {
+    padding-top: 95px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.einfo-reg h5 {
+    margin: 0;
+    padding-bottom: 10px;
+    width: 132px;
+    border-bottom: 3px solid #2fb037;
+    font-size: 16px;
+    color: #3c464e;
+    text-align: center;
+}
+.einfo-form .form-group {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 22px;
+}
+.einfo-form .control-label {
+    width: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    color: #989898;
+}
+.etrial .form-group {
+    margin-bottom: 30px;
+}
+.einfo-form .form-control {
+    border-radius: 0;
+}
+.etrial .control-label {
+    width: 70px;
+}
+.etrial .checkbox,
+.etrial .btn-sbt {
+    margin-left: 8px;
+}
+.einfo-form .ename,
+.einfo-form .ephone {
+    display: inline-block;
+    padding-top: 7px;
+    padding-top/*\**/: 0\9;
+    font-size: 14px;
+}
+
+.einfo-basic {
+    padding-top: 88px;
+    padding-bottom: 33px;
+}
+
+.einfo-contact-title {
+    padding-bottom: 21px;
+}
+.einfo-detail-title {
+    padding-top: 58px;
+    padding-bottom: 26px;
+}
+.einfo-contact-title h6,
+.einfo-detail-title h6 {
+    margin: 0;
+    padding: 9px 14px;
+    font-size: 16px;
+    color: #5c5c5c;
+}
+
+.license-pic {
+    margin-left: 39px;
+    padding: 20px;
+    width: 360px;
+    height: 260px;
+    background-color: #f5f9f5;
+    border: 1px solid #eeeeee;
+}
+
+.btn-sbt {
+    margin-left: 39px;
+}
+
+/**
+ * LEAP USER PROTOCOL AGREEMENT
+ */
+
+.leap-agreement-modal {
+    color: #666666 ;
+    line-height: 1.8;
+    overflow: scroll
+}
+.leap-agreement-modal .close {
+    float: none;
+    position: absolute;
+    top: 15px;
+    right: -30px;
+}
+.leap-agreement-modal h4 {
+    margin-top: 25px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+.leap-agreement-modal h5 {
+    margin-top: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+.leap-agreement-modal ol ol {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    list-style-type: lower-alpha;
+}
+
+.leap-agreement-modal .modal-dialog {
+    width: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #fafafa;
+}
+
+/*this is for leap-user-setting page*/
+.user-setting .form-control { border-radius: 0; }
+
+.user-setting .nav-tabs li {
+    margin-right: 10px;
+    /*margin-bottom: -2px;*/
+}
+
+.user-setting .nav-tabs li a {
+    display: inline-block;
+    height: 42px;
+    padding: 10px 30px;
+    font-size: 14px;
+    color: #6f808b;
+    background-color: #edf0f2;
+    border-radius: 0;
+    border: 1px solid #efefef;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-setting .nav-tabs li.active a {
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+    border-top: 3px solid #2fb037;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+}
+
+.user-setting .nav-tabs li.active a:hover { border-bottom: none; }
+
+.setting-info-list tr td { height: 50px; }
+
+.setting-info-list tr td select.form-control {
+    width: 150px;
+    display: inline;
+
+}
+
+.setting-info-list tr td textarea {
+    margin-top: 20px;
+    resize: none;
+}
+
+
+
+.upload {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+}
+
+.small, .middle, .large { border: 1px solid #ccc; }
+
+.avatar-preview .small {
+    width: 80px;
+    height: 80px;
+}
+
+.avatar-preview .middle {
+    width: 130px;
+    height: 130px;
+}
+
+.avatar-preview .large {
+    width: 180px;
+    height: 180px;
+}
+
+
+/**
+ * Below is for password reset pages
+ */
+.progress-track {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.einfo-findpwd .einfo-basic {
+    padding-top: 0;
+}
+
+.verify-id {
+    padding-left: 250px;
+    font-size: 16px;
+    color: #303030;
+}
+
+.success-info {
+    padding-left: 250px;
+    font-size: 16px;
+    color: #303030;
+}
+.success-info p:first-child {
+    font-size: 24px;
+}
+.success-info a {
+    margin-right: 25px;
+}
+.success-info a:first-child {
+    margin-left: 55px;
+}
+
+/*Below style is highly related with alert-window page*/
+.tip-container {
+    width: 465px;
+    padding-bottom: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #CCC;
+}
+
+.tip-header {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 13px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+.tip-header i {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 20px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.tip-header i:hover { color: #2fb037; }
+
+.tip-content {
+    padding-top: 45px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tip-content img{ margin-right: 12px; }
+
+.tip-footer {
+    height: 30px;
+    padding-right: 13px;
+}
+
+.detail-info {
+    font-size: 12px;
+    color: #999;
+    line-height: 1;
+}
+
+.row p {
+    margin-bottom: 0;
+}
+
+.tip-content .row {
+    width: 485px;
+    text-align: left;
+}
+
+.tip-content form {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.tip-content form label {
+    display: inline-block;
+    min-width: 63px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.form-group .pt-0 {
+    padding-top: 0;
+}
+
+.tip-content .content-text {
+    position: relative;
+    top: -24px;
+}
+
+i.tip-blue,
+i.tip-failed,
+i.tip-warning,
+i.tip-succeed {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+i.tip-blue {
+    background-image: url("../img/blue.png");
+}
+
+i.tip-succeed {
+    background-image: url("../img/succeed.png");
+}
+
+i.tip-warning {
+    background-image: url("../img/warning.png");
+}
+
+i.tip-failed {
+    background-image: url("../img/failed.png");
+}
+
+.content-box {
+    display: inline-block;
+    text-align: left;
+}
+
+em.content-desc {
+    position: relative;
+    bottom: 10px;
+    font-size: 12px;
+    font-style: normal;
+    color: #999;
+    line-height: 8px;
+}
+
+p.content-desc {
+    font-size: 12px;
+    font-style: normal;
+    color: #999;
+    line-height: 0;
+}
+
+
+/*
+ * 404 page and 500 page
+ */
+
+.page-err {
+    background-color: #eeeff4;
+}
+.page-404-info {
+    margin: 180px auto 0 auto;
+    width: 582px;
+    height: 483px;
+    background: url("../img/404.png");
+}
+.page-404-info button {
+    margin-top: 230px;
+    border-color: #89909a;
+    background-color: #89909a;
+}
+.page-404-info button:first-child {
+    margin-left: 220px;
+    margin-right: 15px;
+}
+.btn-404 {
+    padding: 7px 10px;
+}
+
+/* this part is highly relatived to leap-test
+------------------------------------------------------------------------*/
+.test-header span {
+    display: inline-block;
+    height: 46px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #484848;
+}
+
+.video-header .white,
+.test-header .white {
+    margin-left: -4px;
+    border-right: none;
+    border-left: 1px solid #292929;
+}
+.test-footer span {
+    padding-left: 13px;
+    padding-right: 35px;
+}
+
+.test-header,
+.test-footer {
+    height: 46px;
+    width: 100%;
+    line-height: 46px;
+    font-size: 14px;
+    background-color: #333;
+}
+
+.test-content {
+    color: #000;
+    font-size: 14px;
+
+}
+
+.test-content .row {
+    margin: 0;
+}
+
+.test-content .row .col-xs-9 { border-right: 1px solid #eee; }
+
+.answer-panel {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: left;
+    overflow: auto;
+}
+
+.answer-sheets {
+    margin: 50px 20px;
+    text-align: center;
+}
+
+.test-tip {
+    position: relative;
+    top: 2px;
+    font-size: 24px;
+    color: #94d479;
+}
+
+.qid {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.test-content .retract {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: -15px;
+    padding: 3px 14px 3px 12px;
+    color: #49a8cf;
+    background-color: #e0f3f4;
+    border: 1px solid #e0f3f4;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+}
+.test-content .retract:hover ,
+.retract-analysis:hover {
+    text-decoration: underline;
+}
+
+.test-content .question {
+    margin-bottom: 54px;
+    line-height: 28px;
+}
+
+.question-type {
+    margin-left: 16px;
+    margin-right: 11px;
+    color: #ec9294;
+}
+
+.choice-list {
+    margin-bottom: 50px;
+}
+
+.choice-list li {
+    margin-bottom: 23px;
+
+}
+
+.answer-list li {
+    display: inline-block;
+    height: 30px;
+    width: 88px;
+    margin-right: 18px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.judge-list li {
+    height: 43px;
+    width: 166px;
+    margin-right: 30px;
+    line-height: 43px;
+}
+
+.answer-list li:hover {
+    cursor: pointer;
+    background-color: #f6f6f6;
+    color: #2fb037;
+    border: 1px inset #f6f6f6;
+}
+
+.chosen {
+    background-color: #f6f6f6;
+    color: #2fb037;
+    border: 1px inset #f6f6f6;
+}
+
+.order-choice {
+    position: absolute;
+    right: 130px;
+    bottom: 37px;
+}
+
+.order-choice a {
+    color: #000;
+    margin-right: 64px;
+}
+
+.order-choice a:hover {
+    color: #3cc6db;
+}
+
+.btn-next {
+    display: inline-block;
+    width: 109px;
+    height: 38px;
+}
+
+.sheet-list {
+    margin-top: 41px;
+}
+
+.sheet-list li {
+    float: left;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    color: #7d7d7d;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+}
+
+.sheet-list li.finished {
+    background-color: #f0f0f0;
+}
+
+.static-choice {
+    position: absolute;
+    bottom: 26px;
+}
+
+.btn-submit ,
+.btn-oncemore {
+    position: absolute;
+    right: 0;
+    bottom: 37px;
+    left: 0;
+    display: inline-block;
+    width: 200px;
+    height: 38px;
+    margin: 0 auto;
+}
+
+
+
+.index-panel {
+    background: #f6f9f9 url("../img/bulb.png") no-repeat scroll center center;
+    text-align: center;
+
+
+}
+
+.index-content {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -115px;
+    width: 737px;
+    height: 230px;
+    text-align: center;
+    color: #666;
+
+}
+
+.test-title {
+    position: relative;
+    width: 185px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.title-attachment {
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    left: 0;
+    font-size: 21px;
+    color: #afafaf;
+}
+
+.index-panel .btn-submit,
+.btn-oncemore {
+    position: inherit;
+    bottom: auto;
+    margin-top: 23px;
+    background-color: #2dcd70;
+    border: 1px solid #2dcd70;
+}
+
+.btn-oncemore {
+    margin-left: 20px;
+    color: #2dcd70;
+    background-color: transparent;
+    border: 1px solid #2dcd70;
+}
+.btn-oncemore:hover {
+    color: #fff;
+    background-color: #2dcd70;
+    border: 1px solid #2dcd70;
+}
+
+.retract-analysis {
+    float: right;
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #2fb037;
+    cursor: pointer;
+}
+
+.answer-analysis {
+    padding-top: 20px;
+    margin-top: 22px;
+    border-top: 1px dashed #ccc;
+    font-size: 12px;
+}
+
+.analysis-container {
+    margin-top: 20px;
+}
+
+.analysis-content {
+    margin-top: 3px;
+    line-height: 20px;
+    color: #838a8d;
+}
+
+.answer-result span b { margin-right: 10px; }
+
+/* quiz result */
+.table-quiz {
+    font-size: 12px;
+    color: #6b717b;
+    border: none;
+}
+.table-quiz > thead > tr {
+    border-bottom: 1px solid #edf2f1;
+}
+.table-quiz > thead > tr > td,
+.table-quiz > tbody > tr > td {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: none;
+    text-align: left;
+}
+.table-quiz > thead > tr > td:first-child,
+.table-quiz > tbody > tr > td:first-child {
+    padding-left: 5%;
+}
+.table-quiz > tbody > tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.table-quiz > tbody > tr:hover {
+    background-color: #f0f3f5;
+}
+.table-quiz > tbody > tr:first-child > td {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 15px;
+    color: #44555a;
+    background-color: #ffffff;
+}
+
+.result-panel {
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.result-title {
+    color: #0aafde;
+    font-size: 18px;
+}
+.result-right {
+    color: #50b12b;
+    font-weight: bold;
+}
+.result-wrong {
+    color: #f23d5b;
+    font-weight: bold;
+}
+.result-sidetitle {
+    margin-top: 0;
+    padding-top: 15px;
+    font-size: 18px;
+    color: #000;
+}
+.result-txt {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: #6b717b;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #fbfbfb;
+}
+
+.result-score {
+    position: relative;
+    margin: 68px auto;
+    width: 230px;
+    height: 85px;
+}
+
+.result-txt > p {
+    margin-top: 15px;
+}
+.result-txt > p:first-child {
+    margin-top: 0;
+}
+
+.result-popover {
+    display: block;
+    border-radius: 4px;
+    border-color: #dfdfdf;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.result-popover > .arrow {
+    top: -8px !important;
+    border-width: 8px;
+    border-bottom-color: #dfdfdf !important;
+}
+.result-popover > .arrow:after {
+    margin-left: -7px !important;
+    border-width: 7px;
+}
+
+.result-popover .popover-content {
+    padding: 25px 35px;
+    font-size: 20px;
+}
+
+.result-score-txt {
+    color: #74ca56;
+}
+.result-score-level {
+    font-family: arial, sans-serif;
+    color: #fe0504;
+}
+.sheet-list li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+

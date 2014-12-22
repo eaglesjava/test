@@ -1,0 +1,404 @@
+
+        /*
+         * --------------------------------------- */
+        body {
+            font: 14px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+            /*color: #ffffff;*/
+            background-color: #fff
+
+        }
+
+        /* Help class
+         * --------------------------------------- */
+        .simhei {
+            font-family: "simhei";
+        }
+        .font-25 {
+            font-size: 25px;
+        }
+        .hided {
+            display: none;
+        }
+        .show {
+            display: table !important;
+        }
+
+        /* Layout for our header
+         * --------------------------------------- */
+        .wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+        }
+        .root {
+            position: relative;
+        }
+
+
+        /* Style for our header texts
+         * --------------------------------------- */
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: #ffffff;
+            color: #ffffff;
+            border-bottom: 1px solid #d4efd5;
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            display: block;
+            z-index: 9;
+        }
+
+        .header .logo img {
+            height: 80px;
+        }
+
+        .menu {
+            padding-top: 23px;
+            width: 438px; /* TBC */
+            float: right;
+        }
+        .menu .input-group {
+            float: left;
+            width: 372px; /* TBC */
+        }
+
+
+        /* Overwrite form styles
+         * ======================================= */
+
+        .form-leap .form-control {
+            border-radius: 0;
+            box-shadow: none;
+        }
+        .form-leap .form-control:focus {
+            border-color: #2fb037;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .form-leap .btn {
+            color: #ffffff;
+            background-color: #2fb037;
+            border-radius: 0;
+        }
+        .form-leap .input-group-btn:last-child > .btn,
+        .form-leap .input-group-btn:last-child > .btn-group {
+            margin-left: 0;
+        }
+        .form-leap .btn:hover,
+        .form-leap .btn:focus,
+        .form-leap .btn.focus {
+            color: #ffffff;
+        }
+        .form-leap .btn:active,
+        .form-leap .btn.active {
+            outline: 0;
+            background-image: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .form-leap .btn:focus,
+        .form-leap .btn:active:focus,
+        .form-leap .btn.active:focus,
+        .form-leap .btn.focus,
+        .form-leap .btn:active.focus,
+        .form-leap .btn.active.focus {
+            outline: none;
+        }
+
+        /* Header form */
+        .header-form {
+            background-color: #ffffff;
+        }
+
+
+        /* Section form */
+        .section-form .form-control {
+            height: 60px;
+            line-height: 18px;
+            line-height/*\**/: 46px\9; /* IE8 hack */
+            background-color: #ffffff;
+            border-color: #2fb037;
+            font-size: 16px;
+        }
+        .section-form .btn {
+            height: 60px;
+            width: 158px;
+            font-size: 23px;
+        }
+
+
+        /* Common Section Styles
+         * --------------------------------------- */
+        .section{
+            text-align:center;
+        }
+        .section h3 {
+            margin-bottom: 24px;
+            font-size: 50px;
+        }
+        .section p {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+
+        /* Section style
+         * -------------- Section 1
+         * --------------------------------------- */
+        .section1 {
+            /*margin-top: -60px;*/
+            background: url("../img/grandindex/bg_road.png") no-repeat 0 250px;
+            /*background-size: cover;*/
+        }
+        .section1 h1 {
+            color: #555555;
+            font-size: 64px;
+        }
+
+        .signup-leap {
+            padding-top: 96px;
+            width: 654px;
+        }
+
+
+        /* Section style
+         * -------------- Section 2
+         * --------------------------------------- */
+        .section2 {}
+        .section2 h3,
+        .section2 p {
+            color: #3e8692;
+        }
+
+        .section2-left {
+            position: relative;
+            width: 316px;
+            height: 360px;
+            background: url("../img/grandindex/bg_pops.png") no-repeat;
+        }
+        .section2-left .service {
+            position: absolute;
+            left: 130px;
+            top: 20px;
+        }
+        .section2-left .plan {
+            position: absolute;
+            right: -62px;
+            top: 107px;
+        }
+        .section2-left .course {
+            position: absolute;
+            left: -90px;
+            bottom: 70px;
+        }
+        .section2-left .live {
+            position: absolute;
+            left: 86px;
+            bottom: -30px;
+        }
+
+        .section2-right {
+            padding-top: 90px;
+            text-align: right;
+        }
+
+
+
+        /* Section style
+         * -------------- Section 3
+         * --------------------------------------- */
+        .section3 {
+            /*background: url("img/grandindex/bg_videos.png") no-repeat 50% 50%;*/
+        }
+
+        .section3-slogan {
+            position: absolute;
+            top: 160px;
+            left: 28%;
+            color: #5e93d2;
+            text-align: left;
+        }
+
+
+        /* Section style
+         * -------------- Section 4
+         * --------------------------------------- */
+        .section4-left {
+            position: absolute;
+            bottom: 70px;
+        }
+        .section4-right {
+            position: absolute;
+            top: 0;
+            right: -320px;
+        }
+        .section4-slogan {
+            color: #429347;
+            text-align: right;
+        }
+
+
+        /* Section style
+         * -------------- Section 5
+         * --------------------------------------- */
+        .section5 {
+            background: url("../img/grandindex/bg_connecteddots.png") no-repeat 70% 60%;
+        }
+        .section5-wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+        }
+        .section5-left {
+            padding-top: 70px;
+        }
+        .section5-slogan {
+            color: #787878;
+            text-align: left;
+        }
+
+
+
+        /* Section style
+         * -------------- Section 6
+         * --------------------------------------- */
+        .section6-slogan {
+            padding-top: 80px;
+            color: #9661a5;
+            text-align: right;
+        }
+
+        .section6-right {
+            margin-right: 50px;
+        }
+
+        /* Section style
+         * -------------- Section 7
+         * --------------------------------------- */
+        .section7 {
+            background: url("../img/grandindex/bg_15.png") no-repeat 50% 50%;
+        }
+
+        /*
+         * For 1024px max
+         */
+        @media (max-width: 1024px) {
+
+            /* section common */
+            .section{
+                text-align:center;
+            }
+            .section h3 {
+                margin-bottom: 16px;
+                font-size: 35px;
+            }
+            .section p {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+
+            /* section2 */
+            .section2-left .service {
+                position: absolute;
+                left: 160px;
+                top: 20px;
+            }
+            .section2-left .plan {
+                position: absolute;
+                right: -105px;
+                top: 107px;
+            }
+            .section2-left .course {
+                position: absolute;
+                left: 14px;
+                bottom: 70px;
+            }
+            .section2-left .live {
+                position: absolute;
+                left: 159px;
+                bottom: -50px;
+            }
+
+            .section2-right {
+                margin-right: 100px;
+                padding-top: 80px;
+                text-align: right;
+            }
+
+            /* section3 */
+            /*.small-screen {
+                display: block;
+            }
+            .large-screen {
+                display: none;
+            }
+*/
+
+            /* section4 */
+            .section4-left {
+                position: absolute;
+                bottom: 70px;
+            }
+            .section4-right {
+                position: absolute;
+                top: 0;
+                right: -260px;
+            }
+            .section4-slogan {
+                color: #67b16b;
+                text-align: right;
+            }
+
+            /* section5 */
+            .section5-left {
+                padding-top: 70px;
+                padding-left: 70px;
+            }
+            .section5-right {
+                padding-right: 50px;
+            }
+            .section5-slogan {
+                color: #929292;
+                text-align: left;
+            }
+
+            /* section6 */
+            .section6-slogan {
+                padding-right: 30px;
+                padding-top: 80px;
+                color: #b182be;
+                text-align: right;
+            }
+
+            .section6-left {
+                margin-left: 50px;
+            }
+
+        }
+
+        @media (max-height: 800px) {
+            .section3-slogan {
+                position: absolute;
+                top: 120px;
+                color: #aacef9;
+                text-align: left;
+            }
+            .section3-slogan p {
+                display: none;
+            }
+
+            .section3-slogan-down {
+                position: absolute;
+                bottom: 100px;
+                left: 28%;
+                color: #aacef9;
+                text-align: left;
+            }
+        }
+
+
